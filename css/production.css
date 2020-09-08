@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.header_container {
+    background: #3c6930;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.header_container--center {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+.header_container--center a {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header_container--center .header--botton {
+    padding: 0 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header_container--center .header--botton:hover {
+    /* color: red; */
+    background: #519040;
+    /* border-bottom: red solid 10px; */
+}
+
+.header_logo {
+    width: 100px;
+    height: 41px;
+    background-image: url('/image/logo/sta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_logo:hover {
+    background-image: url('/image/logo/Santa Teresa Logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_container--center a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .cadena_container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: 
+        "campo campo" 
+        "empaque envio";
+}
+
+.cadena_campo {
+    grid-area: campo;
+    background: #009b16;
+}
+
+.cadena_campo img {
+    width: 100%;
+    /* height: 100%; 
+}*/
+
+.cadena_empaque {
+    grid-area: empaque;
+    background: red;
+}
+
+.cadena_envio {
+    grid-area: envio;
+    background: yellow;
+} */
+
+.production_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/DJI_0057.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 100%;
+}
+
+.production_home {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.hortalizas_container {
+    width: 100%;
+    height: auto;
+    background-color: #3c6930;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh 50vh;
+    grid-template-areas: 
+        "texto_description imagen_product"
+        "imagen_emp texto_emp";
+}
+
+.hortalizas_container a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.hortalizas_container a:hover {
+    background-color: #00ad1a;
+    border: 1px solid #00ad1a;
+}
+
+.tomates {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-image: url('/image/tomate/tomato.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pimientos {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-image: url('/image/pimiento.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chiles {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    background-image: url('/image/chile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pepinos {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-image: url('/image/pepino.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.china {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-image: url('/image/china.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hortalizas_contact {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    background-color: #009b16;
+    text-align: center;
+}
+
+.hortalizas_contact a:hover {
+    background-color: white;
+    color: black;
+}
+
+.hortalizas_description {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hortalizas_description h2 {
+    font-size: 2rem;
+}
+
+.hortalizas_description p {
+    margin: 0 15%;
+}
+
+.footer_container {
+    width: 100%;
+    height: 200px;
+    background: #3c6930;
+    color: white;
+}
+
+.footer_container--center {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 350px 450px 200px;
+    grid-template-rows: 200px;
+    font-size: 14px;
+}
+
+.secciones_container {
+    display: flex;
+    align-items: center;
+}
+
+.secciones_container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_container img {
+    width: 120px;
+}
+
+.footer_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_direccion {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}

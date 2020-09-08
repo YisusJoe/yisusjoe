@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header_container {
+    background: #3c6930;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: 'Palanquin Dark', sans-serif;
+    /* position: absolute; */
+}
+
+.header_container--center {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+.header_container--center a {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    /* border-bottom: red solid 2px; */
+}
+
+.header_container--center .header--botton {
+    padding: 0 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+}
+
+.header_container--center .header--botton:hover {
+    /* color: red; */
+    background: #519040;
+    /* border-bottom: red solid 10px; */
+}
+
+.header_logo {
+    width: 100px;
+    height: 41px;
+    background-image: url('/image/logo/sta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_logo:hover {
+    background-image: url('/image/logo/Santa Teresa Logo instance.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_container--center a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero_container {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero_video--container {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_video--container video {
+    margin: 0 auto;
+}
+
+.history_container--center {
+    width: 100%;
+}
+
+.history_container {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-gap: 80px;
+    border-bottom: 1px solid rgb(93, 94, 94);
+}
+
+.history, .history_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history_image img {
+    width: 100%;
+}
+
+.history_image video {
+    width: 100%;
+}
+
+.history h2 {
+    color: #009b16;
+}
+
+.history a {
+    width: 100px;
+    background-color: #009b16;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.history a:hover {
+    background-color: #00ad1a;
+}
+
+.identidad_container {
+    background: grey;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 60px; */
+    text-align: center;
+}
+
+.identidad_container p {
+    font-size: 20px;
+}
+
+.caracteristicas_container {
+    max-width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 14px;
+    text-align: center;
+    /* border-bottom: 1px solid rgb(93, 94, 94) */
+}
+.caracteristicas_container h3 {
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.caracteristicas_container p {
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actividades_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+}
+
+.abejas {
+    background-image: url('../image/abejas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ganadera {
+    background-image: url('../image/ganadera.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map_container {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.map_container iframe {
+    width: 99%;
+    height: 400px;
+}
+
+.footer_container {
+    width: 100%;
+    height: 200px;
+    background: #3c6930;
+    color: white;
+}
+
+.footer_container--center {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 400px 200px;
+    grid-template-rows: 200px;
+    font-size: 14px;
+}
+
+.secciones_container {
+    display: flex;
+    align-items: center;
+}
+
+.secciones_container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_container img {
+    width: 120px;
+}
+
+.footer_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_direccion {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.footerext_container {
+    width: 100%;
+}
+
+.footerext_container--center {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto; 
+    padding: 50px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 150px;
+    row-gap: 20px;
+    column-gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.footerext_container--center div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

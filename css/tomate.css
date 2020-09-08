@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header_container {
+    background: #3c6930;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: 'Palanquin Dark', sans-serif;
+    position: absolute;
+}
+
+.header_container--center {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+.header_container--center a {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    /* border-bottom: red solid 2px; */
+}
+
+.header_container--center .header--botton {
+    padding: 0 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+}
+
+.header_container--center .header--botton:hover {
+    /* color: red; */
+    background: #519040;
+    /* border-bottom: red solid 10px; */
+}
+
+.header_logo {
+    width: 100px;
+    height: 41px;
+    background-image: url('/image/logo/sta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_logo:hover {
+    background-image: url('/image/logo/Santa Teresa brown.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_container--center a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/image/tomate/planta-may21b1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_container .hero_tittle {
+    width: 100%;
+    height: 100%;
+    background-color:;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_container--pimiento .hero_tittle {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_container--pepino .hero_tittle {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_container--chile .hero_tittle {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_container--verdura .hero_tittle {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_tittle h2 {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    /* box-shadow: 0 0 black; */
+    text-shadow: 2px 0px 1px black;
+}
+
+.hero_tittle h1 {
+    color: white;
+    margin: 0;
+    font-size: 80px;
+    text-shadow: 2px 2px 6px black;
+}
+
+.hero_container--pimiento {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/image/El-Aji2-pan-970x484.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_container--chile {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/image/El-Aji2-pan-970x484.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_container--pepino {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/image/Cover-blog-pepinos.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_container--verdura {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/image/20191119_135407.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.siembra_container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.siembra_malla {
+    width: 50%;
+    height: 100%;
+    background-image: url('/img/DJI_0003-1.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.siembra_campo {
+    width: 50%;
+    height: 100%;
+    background-image: url('/image/DJI_0057-7.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product_container {
+    /* width: 1000px;
+    margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 40vh 40vh 40vh 50vh;
+}
+
+.product_image1 {
+    background-image: url('/image/tomate/saladette.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_image2 {
+    background-image: url('/image/tomate/tomato.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_image3 {
+    background-image: url('/image/tomate/uva.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_terminado {
+    background-image: url('/image/tomate/pexels-nuzul-arifa-1691180.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_description {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+}
+
+.product_description h2 {
+    color: #009b16;
+}
+
+.product_image--pimiento {
+    background-image: url('/image/el-cultivo-multitallo-del-pimiento.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_terminado--pimiento {
+    background-image: url('/image/pimiento.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.product_image--chile {
+    background-image: url('/image/chile-piquin.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_terminado--chile {
+    background-image: url('/image/chile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_image--verdura {
+    background-image: url('/image/20191209_112059.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_terminado--verdura {
+    background-image: url('/image/20191111_114433.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_image--pepino {
+    background-image: url('/image/unnamed.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product_terminado--pepino {
+    background-image: url('/image/cucumbers-pepinos-cv_1200.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer_container {
+    width: 100%;
+    height: 200px;
+    background: #3c6930;
+    color: white;
+}
+
+.footer_container--center {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 400px 200px;
+    grid-template-rows: 200px;
+    font-size: 14px;
+}
+
+.secciones_container {
+    display: flex;
+    align-items: center;
+}
+
+.secciones_container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_container img {
+    width: 120px;
+}
+
+.footer_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_direccion {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
