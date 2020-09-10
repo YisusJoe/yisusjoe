@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 body {
-    font-family: 'Quicksand', sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 p {
@@ -14,13 +11,11 @@ p {
 }
 
 .header_container {
-    background: #25733a;
+    background: #25733A;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
-    font-family: 'Palanquin Dark', sans-serif;
-    /* position: absolute; */
 }
 
 .header_container--center {
@@ -28,14 +23,12 @@ p {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    /* align-items: flex-end; */
 }
 
 .header_container--center a {
     padding: 0 30px;
     display: flex;
     align-items: center;
-    /* border-bottom: red solid 2px; */
 }
 
 .header_container--center .header--botton {
@@ -48,21 +41,21 @@ p {
 
 .header_container--center .header--botton:hover {
     /* color: red; */
-    background: #25733a;
+    background: #30904a;
     /* border-bottom: red solid 10px; */
 }
 
 .header_logo {
     width: 100px;
     height: 41px;
-    background-image: url('/image/logo/Santa Teresa brown.png');
+    background-image: url('/image/logo/sta.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header_logo:hover {
-    background-image: url('/image/logo/sta.png');
+    background-image: url('/image/logo/Santa Teresa Logo instance.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,37 +66,214 @@ p {
     color: white;
 }
 
+
 .historia_container {
     width: 100%;
+    color: #858484;
+    text-align: center;
+    /* color: #30904a; */
 }
 
 .historia_container--center {
-    width: 1000px;
+    font-size: 1.1rem;
+    max-width: 1000px;
     margin: 0 auto;
-    font-size: 16px;
     text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(13,250px);
+    column-gap: 30px;
+    grid-template-areas: 
+        "parrafo_1 parrafo_1 parrafo_1 genova"
+        /* "Julio_Podesta parrafo_2 parrafo_2 parrafo_2" */
+        "Julio_Podesta Julio_Podesta Julio_Podesta Julio_Podesta"
+        "parrafo_3 parrafo_3 parrafo_3 parrafo_3"
+        /* "parrafo_4 parrafo_4 parrafo_4" */
+        "parrafo_5 parrafo_5 parrafo_5 foto_campo"
+        "vita parrafo_6 parrafo_6 parrafo_6"
+        "parrafo_7 parrafo_7 parrafo_7 parrafo_7"
+        "parrafo_8 parrafo_8 parrafo_8 Empaque2014"
+        "parrafo_9 parrafo_9 parrafo_9 parrafo_9"
+        "parrafo_10 parrafo_10 parrafo_10 FamiliaPodesta"
+        "parrafo_11 parrafo_11 parrafo_11 parrafo_11"
+        "frase_enrique frase_enrique frase_enrique frase_enrique"
+        "linea_tiempo_sta linea_tiempo_sta linea_tiempo_sta linea_tiempo_sta"
+        "linea_tiempo_sta linea_tiempo_sta linea_tiempo_sta linea_tiempo_sta";
 }
 
-.seccion1 {
-    display: flex;
-}
-
-.seccion2 {
-    display: flex;
-}
-
-.seccion2 img {
+.historia_container--center img {
     width: 300px;
 }
 
-.seccion1 img {
-    width: 500px;
+.historia_container--center p {
+}
+
+.parrafo_1 {
+    grid-area: parrafo_1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+}
+.parrafo_1 strong {
+    color: #25733A;
+}
+.genova {
+    grid-area: genova;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.genova img {
+    width: 360px;
+}
+.Julio_Podesta {
+    grid-area: Julio_Podesta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Julio_Podesta img {
+    width: 200px;
+}
+.Julio_Podesta p {
+    padding-left: 30px;
+}
+.parrafo_2 {
+    grid-area: parrafo_2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo_3 {
+    grid-area: parrafo_3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parrafo_4 {
+    grid-area: parrafo_4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo_5 {
+    grid-area: parrafo_5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto_campo {
+    grid-area: foto_campo;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.foto_campo img {
+    width: 400px;
+}
+.vita {
+    grid-area: vita;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+}
+.vita img {
+    width: 350px;
+}
+.parrafo_6 {
+    grid-area: parrafo_6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.parrafo_7 {
+    grid-area: parrafo_7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #858484; */
+}
+.parrafo_7 strong {
+    color: red;
+}
+.parrafo_7 .frase {
+    color: #30904a;
+}
+.parrafo_8 {
+    grid-area: parrafo_8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo_9 {
+    grid-area: parrafo_9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Empaque2014 {
+    grid-area: Empaque2014;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Empaque2014 img {
+    width: 400px;
+}
+.parrafo_10 {
+    grid-area: parrafo_10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo_11 {
+    grid-area: parrafo_11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FamiliaPodesta {
+    grid-area: FamiliaPodesta;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.FamiliaPodesta img {
+    width: 400px;
+}
+.frase_enrique {
+    grid-area: frase_enrique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background: #f7f7f7;
+    color: #30904a;
+    border-radius: 10px;
+}
+.frase_enrique p {
+    padding: 0 4rem;
+}
+.linea_tiempo_sta {
+    grid-area: linea_tiempo_sta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea_tiempo_sta img {
+    width: 50%;
 }
 
 .footer_container {
     width: 100%;
     height: 200px;
-    background: #3c6930;
+    background: #25733A;
     color: white;
 }
 

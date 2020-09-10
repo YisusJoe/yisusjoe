@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 .header_container {
-    background: #3c6930;
+    background: #25733A;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
-    font-family: 'Palanquin Dark', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Palanquin Dark', sans-serif; */
     /* position: absolute; */
 }
 
@@ -42,7 +42,7 @@ body {
 
 .header_container--center .header--botton:hover {
     /* color: red; */
-    background: #519040;
+    background: #30904a;
     /* border-bottom: red solid 10px; */
 }
 
@@ -82,22 +82,31 @@ body {
 }
 
 .hero_video--container video {
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    width: 100%;
 }
 
 .history_container--center {
     width: 100%;
+    /* height: 100%; */
 }
 
 .history_container {
-    width: 1000px;
+    width: 50vw;
     margin: 0 auto;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100vh;
     grid-gap: 80px;
     border-bottom: 1px solid rgb(93, 94, 94);
+    font-size: 0.9vw;
+}
+
+.history p {
+    /* font-family: 'Poppins', sans-serif; */
+    color: #858484;
+    text-align: justify;
+    /* font-size: 120%;  */
 }
 
 .history, .history_image {
@@ -106,9 +115,6 @@ body {
     justify-content: center;
 }
 
-.history_image img {
-    width: 100%;
-}
 
 .history_image video {
     width: 100%;
@@ -125,6 +131,7 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 4px;
+    font-size: 18px;
 }
 
 .history a:hover {
@@ -153,15 +160,17 @@ body {
     margin: 0 auto;
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.3rem;
     text-align: center;
-    /* border-bottom: 1px solid rgb(93, 94, 94) */
+    border-bottom: 1px solid rgb(93, 94, 94);
+    color: #858484;
 }
 .caracteristicas_container h3 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 20px 0;
-    font-family: 'Quicksand', sans-serif; 
+    color: black;
+    /* font-family: 'Quicksand', sans-serif;  */
 }
 
 .caracteristicas_container p {
@@ -175,24 +184,109 @@ body {
     align-items: center;
 }
 
+.mundo_titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+.mundo_titulo strong {
+    color: red;
+}
+
+.mundo_container {
+    text-align: center;
+    display: flex;
+}
+
+.abejas_container {
+    width: 50%;
+    height: 400px;
+    border-radius: 5px;
+    background-image: url('../image/abejas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reforestacion_container {
+    width: 50%;
+    height: 400px;
+    border-radius: 5px;
+    background-image: url('../image/reforestacion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.certificaciones_container {
+    width: 100%;
+}
+
+.certificaciones_container--center {
+    width: 1000px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.certificaciones_logo {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoglobal img {
+    width: 90%;
+}
+
+.logoSRRC img {
+    width: 82%;
+}
+
+.transporte_container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.transporte_img {
+    width: 50%;
+    height: inherit;
+    background-image: url('../image/transporte.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transporte_texto {
+    width: 50%;
+    height: inherit;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.transporte_texto p {
+    width: 80%;
+    color: #858484;
+}
+
+.transporte_texto h1 {
+    color: #009b16;
+    font-size: 1.8rem;
+}
+
 .actividades_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px;
-}
-
-.abejas {
-    background-image: url('../image/abejas.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.ganadera {
-    background-image: url('../image/ganadera.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .map_container {
@@ -211,7 +305,7 @@ body {
 .footer_container {
     width: 100%;
     height: 200px;
-    background: #3c6930;
+    background: #25733A;
     color: white;
 }
 
