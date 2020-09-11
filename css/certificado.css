@@ -77,12 +77,14 @@ body {
 }
 
 .parrafo_global h2 {
-    font-family: 'Palanquin Dark', sans-serif;
+    /* font-family: 'Palanquin Dark', sans-serif; */
     color: #009b16;
 }
 
 .parrafo_global p {
     margin-bottom: 40px;
+    text-align: justify;
+    color: #858484;
 }
 
 .parrafo_global strong {
